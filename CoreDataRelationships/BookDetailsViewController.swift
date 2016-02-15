@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BookDetailsViewController.swift
 //  CoreDataRelationships
 //
 //  Created by Randall Mardus on 2/15/16.
@@ -7,22 +7,22 @@
 //
 
 import UIKit
-import CoreData
 
-class ViewController: UIViewController {
+class BookDetailsViewController: UIViewController {
     
-    var context: NSManagedObjectContext?
-
+    var book: Book!
+    @IBOutlet weak var bookTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        bookTitleLabel.text = book.title
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

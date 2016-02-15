@@ -12,6 +12,11 @@
 		154131A01C726C78005B88AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1541319E1C726C78005B88AD /* Main.storyboard */; };
 		154131A21C726C78005B88AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154131A11C726C78005B88AD /* Assets.xcassets */; };
 		154131A51C726C78005B88AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154131A31C726C78005B88AD /* LaunchScreen.storyboard */; };
+		154131AD1C726D1B005B88AD /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131AC1C726D1B005B88AD /* CDHelper.swift */; };
+		154131B01C726D59005B88AD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 154131AE1C726D59005B88AD /* Model.xcdatamodeld */; };
+		154131B31C726D83005B88AD /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B11C726D83005B88AD /* Book+CoreDataProperties.swift */; };
+		154131B41C726D83005B88AD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B21C726D83005B88AD /* Book.swift */; };
+		154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B51C726E6F005B88AD /* BookDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		154131A11C726C78005B88AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154131A41C726C78005B88AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154131A61C726C78005B88AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154131AC1C726D1B005B88AD /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		154131AF1C726D59005B88AD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		154131B11C726D83005B88AD /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		154131B21C726D83005B88AD /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		154131B51C726E6F005B88AD /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,8 @@
 		1541318E1C726C78005B88AD = {
 			isa = PBXGroup;
 			children = (
+				154131B11C726D83005B88AD /* Book+CoreDataProperties.swift */,
+				154131B21C726D83005B88AD /* Book.swift */,
 				154131991C726C78005B88AD /* CoreDataRelationships */,
 				154131981C726C78005B88AD /* Products */,
 			);
@@ -55,9 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				1541319A1C726C78005B88AD /* AppDelegate.swift */,
+				154131AE1C726D59005B88AD /* Model.xcdatamodeld */,
 				1541319C1C726C78005B88AD /* ViewController.swift */,
 				1541319E1C726C78005B88AD /* Main.storyboard */,
+				154131B51C726E6F005B88AD /* BookDetailsViewController.swift */,
 				154131A11C726C78005B88AD /* Assets.xcassets */,
+				154131AC1C726D1B005B88AD /* CDHelper.swift */,
 				154131A31C726C78005B88AD /* LaunchScreen.storyboard */,
 				154131A61C726C78005B88AD /* Info.plist */,
 			);
@@ -136,7 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1541319D1C726C78005B88AD /* ViewController.swift in Sources */,
+				154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */,
 				1541319B1C726C78005B88AD /* AppDelegate.swift in Sources */,
+				154131B41C726D83005B88AD /* Book.swift in Sources */,
+				154131AD1C726D1B005B88AD /* CDHelper.swift in Sources */,
+				154131B31C726D83005B88AD /* Book+CoreDataProperties.swift in Sources */,
+				154131B01C726D59005B88AD /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +308,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		154131AE1C726D59005B88AD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				154131AF1C726D59005B88AD /* Model.xcdatamodel */,
+			);
+			currentVersion = 154131AF1C726D59005B88AD /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1541318F1C726C78005B88AD /* Project object */;
 }
