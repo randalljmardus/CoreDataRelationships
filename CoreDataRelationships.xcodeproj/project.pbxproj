@@ -17,6 +17,8 @@
 		154131B31C726D83005B88AD /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B11C726D83005B88AD /* Book+CoreDataProperties.swift */; };
 		154131B41C726D83005B88AD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B21C726D83005B88AD /* Book.swift */; };
 		154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B51C726E6F005B88AD /* BookDetailsViewController.swift */; };
+		154131B91C727203005B88AD /* FetchedResultsDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */; };
+		154131BB1C727279005B88AD /* FetchedResultsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		154131B11C726D83005B88AD /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		154131B21C726D83005B88AD /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		154131B51C726E6F005B88AD /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsDisplayer.swift; sourceTree = "<group>"; };
+		154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,18 @@
 				154131AC1C726D1B005B88AD /* CDHelper.swift */,
 				154131A31C726C78005B88AD /* LaunchScreen.storyboard */,
 				154131A61C726C78005B88AD /* Info.plist */,
+				154131B71C7271C8005B88AD /* FetchedResults */,
 			);
 			path = CoreDataRelationships;
+			sourceTree = "<group>";
+		};
+		154131B71C7271C8005B88AD /* FetchedResults */ = {
+			isa = PBXGroup;
+			children = (
+				154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */,
+				154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */,
+			);
+			name = FetchedResults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +166,9 @@
 			files = (
 				1541319D1C726C78005B88AD /* ViewController.swift in Sources */,
 				154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */,
+				154131B91C727203005B88AD /* FetchedResultsDisplayer.swift in Sources */,
 				1541319B1C726C78005B88AD /* AppDelegate.swift in Sources */,
+				154131BB1C727279005B88AD /* FetchedResultsTableDataSource.swift in Sources */,
 				154131B41C726D83005B88AD /* Book.swift in Sources */,
 				154131AD1C726D1B005B88AD /* CDHelper.swift in Sources */,
 				154131B31C726D83005B88AD /* Book+CoreDataProperties.swift in Sources */,
