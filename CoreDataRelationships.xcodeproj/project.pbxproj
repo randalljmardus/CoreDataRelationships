@@ -19,6 +19,7 @@
 		154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B51C726E6F005B88AD /* BookDetailsViewController.swift */; };
 		154131B91C727203005B88AD /* FetchedResultsDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */; };
 		154131BB1C727279005B88AD /* FetchedResultsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */; };
+		154131BD1C737C02005B88AD /* FetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154131BC1C737C02005B88AD /* FetchedResultsControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		154131B51C726E6F005B88AD /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsDisplayer.swift; sourceTree = "<group>"; };
 		154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableDataSource.swift; sourceTree = "<group>"; };
+		154131BC1C737C02005B88AD /* FetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				154131B81C727203005B88AD /* FetchedResultsDisplayer.swift */,
 				154131BA1C727279005B88AD /* FetchedResultsTableDataSource.swift */,
+				154131BC1C737C02005B88AD /* FetchedResultsControllerDelegate.swift */,
 			);
 			name = FetchedResults;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1541319D1C726C78005B88AD /* ViewController.swift in Sources */,
+				154131BD1C737C02005B88AD /* FetchedResultsControllerDelegate.swift in Sources */,
 				154131B61C726E6F005B88AD /* BookDetailsViewController.swift in Sources */,
 				154131B91C727203005B88AD /* FetchedResultsDisplayer.swift in Sources */,
 				1541319B1C726C78005B88AD /* AppDelegate.swift in Sources */,
