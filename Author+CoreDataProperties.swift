@@ -1,5 +1,5 @@
 //
-//  Book+CoreDataProperties.swift
+//  Author+CoreDataProperties.swift
 //  CoreDataRelationships
 //
 //  Created by Randall Mardus on 2/17/16.
@@ -12,9 +12,9 @@
 import Foundation
 import CoreData
 
-extension Book {
+extension Author {
 
-    @NSManaged var title: String?
-    @NSManaged var authors: NSSet?
+    @NSManaged var name: String?
+    @NSManaged var books: NSSet?
 
 }

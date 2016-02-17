@@ -86,3 +86,55 @@ class CDHelper{
         return coordinator
         }()
 }
+
+func seedData(context: NSManagedObjectContext) {
+    let books = [["title" : "The Hobbit", "authors" : "J.R.R. Tolkien"]],
+        ["title": "The Stranger", "authors" : "Albert Camus"]],
+        ["title": "Cat's Cradle", "authors" : "Kurt Vonnegut"]],
+        ["title": "Slaughterhouse-Five", "authors" : "Kurt Vonnegut"]],
+        ["title": "Dune", "authors" : "Frank Herbert"]]
+        ["title" : "Structure and Interpretations of Computer Programs", "authors" : ["Harold Abelson", "Gerald J. Sussman", "Julie Sussman"],
+    
+    "references" : ["The Art of Computer Programming"]]]
+    
+    var createdAuthors = [String: Author]()
+    var createdBooks = [String: Book]()
+    
+    
+    for data in books {
+        let title = data["title"] as! String
+        guard let book = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: context) as? Book else {continue}
+        createdBooks[title] = book
+        book.title = title
+        let authors = data["authors"] as! [String]
+        
+    for a in authors {
+        guard let author = createdAuthors[a] ??
+            NSEntityDescription.insertNewObjectForEntityForName("author", inManagedObjectContext: context) as? Author else {continue}
+        
+        createdAuthors[a] = author
+        author.name = a
+            book.mutableSetValueForKey("authors").addObject(author)
+        }
+        
+        if let references = data["references"] as? [String] {
+            for r in references = createdBooks[r] ?? NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: context) as? Book else {continue}
+            createdBooks[r] = ref
+            ref.title = r
+            book.mutableSetValueForKey("references").addObject(ref)
+        }
+    }
+    
+    do {
+        try context.save()
+    } catch {
+        print("There was a problem saving.")
+    }
+}
+
+
+
+
+
+
+

@@ -47,9 +47,4 @@ func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-    
-    
-    
-    
-    
 }

@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         vc.context = context
         
+        seedData(context)
+        
         return true
     }
 

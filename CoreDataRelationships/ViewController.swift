@@ -16,6 +16,7 @@ class ViewController: UIViewController, FetchedResultsDisplayer {
     var dataSource: FetchedResultsTableDataSource?
     var context: NSManagedObjectContext?
     var selectedIndexPath: NSIndexPath?
+    var author: Author?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,13 @@ class ViewController: UIViewController, FetchedResultsDisplayer {
         if let context = context {
             let request = NSFetchRequest(entityName: "Book")
             request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-            fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: "BooksTableView")
+            if author != nil {
+                request.predicate = NSPredicate(format: "ANY authors = %@", author!)
+    
+            }
+            
+            
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
             fetchedResultsController?.delegate = FetchedResultsControllerDelegate(displayer: self, tableView: tableView)
             dataSource = FetchedResultsTableDataSource(displayer: self, fetchedResultsController: fetchedResultsController, cellIdentifier: "Cell")
             tableView.dataSource = dataSource
